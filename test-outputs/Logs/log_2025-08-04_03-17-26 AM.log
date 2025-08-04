@@ -1,0 +1,4 @@
+[INFO] 04-08-2025 03:17:26 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testValidLogin started
+[INFO] 04-08-2025 03:17:26 [main] [Tests.TC02_LoginPage.testValidLogin(TC02_LoginPage.java:27)] - ===== Starting Valid Login Test =====
+[INFO] 04-08-2025 03:17:26 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testInvalidLogin started
+[INFO] 04-08-2025 03:17:26 [main] [Tests.TC02_LoginPage.testInvalidLogin(TC02_LoginPage.java:45)] - ===== Starting Invalid Login Test =====

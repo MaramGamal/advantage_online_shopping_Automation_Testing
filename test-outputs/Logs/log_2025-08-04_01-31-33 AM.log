@@ -1,0 +1,4 @@
+[INFO] 04-08-2025 01:31:33 [main] [Tests.TC02_LoginPage.testValidLogin(TC02_LoginPage.java:12)] - ===== Starting Valid Login Test =====
+[INFO] 04-08-2025 01:31:33 [main] [Pages.P02_LoginPage.clickLoginIcon(P02_LoginPage.java:24)] - Clicking on login icon
+[INFO] 04-08-2025 01:31:35 [main] [Tests.TC02_LoginPage.testInvalidLogin(TC02_LoginPage.java:26)] - ===== Starting Invalid Login Test =====
+[INFO] 04-08-2025 01:31:35 [main] [Pages.P02_LoginPage.clickLoginIcon(P02_LoginPage.java:24)] - Clicking on login icon

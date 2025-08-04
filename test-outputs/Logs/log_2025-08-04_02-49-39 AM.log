@@ -1,0 +1,6 @@
+[INFO] 04-08-2025 02:49:39 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:12)] - ===== Starting Home Page Logo Display Test =====
+[INFO] 04-08-2025 02:49:39 [main] [Pages.P01_HomePage.isLogoDisplayed(P01_HomePage.java:26)] - Checking if logo is displayed
+[INFO] 04-08-2025 02:49:39 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:18)] - Logo is displayed successfully
+[INFO] 04-08-2025 02:49:44 [main] [Tests.TC01_HomePage.testUserMenuClickable(TC01_HomePage.java:23)] - ===== Starting User Menu Click Test =====
+[INFO] 04-08-2025 02:49:44 [main] [Pages.P01_HomePage.clickMenuUser(P01_HomePage.java:37)] - Clicking on user menu
+[INFO] 04-08-2025 02:49:44 [main] [Tests.TC01_HomePage.testUserMenuClickable(TC01_HomePage.java:29)] - User menu clicked successfully

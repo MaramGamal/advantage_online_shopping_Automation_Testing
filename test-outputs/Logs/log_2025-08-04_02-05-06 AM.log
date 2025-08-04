@@ -1,0 +1,8 @@
+[INFO] 04-08-2025 02:05:06 [main] [Tests.TC02_LoginPage.testValidLogin(TC02_LoginPage.java:14)] - ===== Starting Valid Login Test =====
+[INFO] 04-08-2025 02:05:06 [main] [Pages.P02_LoginPage.enterUsername(P02_LoginPage.java:34)] - Entering username: Maramtest
+[INFO] 04-08-2025 02:05:07 [main] [Pages.P02_LoginPage.enterPassword(P02_LoginPage.java:41)] - Entering password: 123456789Mm
+[INFO] 04-08-2025 02:05:07 [main] [Pages.P02_LoginPage.clickSignIn(P02_LoginPage.java:48)] - Clicking Sign In button
+[INFO] 04-08-2025 02:05:12 [main] [Tests.TC02_LoginPage.testInvalidLogin(TC02_LoginPage.java:32)] - ===== Starting Invalid Login Test =====
+[INFO] 04-08-2025 02:05:13 [main] [Pages.P02_LoginPage.enterUsername(P02_LoginPage.java:34)] - Entering username: wrongUser
+[INFO] 04-08-2025 02:05:13 [main] [Pages.P02_LoginPage.enterPassword(P02_LoginPage.java:41)] - Entering password: wrongPass
+[INFO] 04-08-2025 02:05:13 [main] [Pages.P02_LoginPage.clickSignIn(P02_LoginPage.java:48)] - Clicking Sign In button

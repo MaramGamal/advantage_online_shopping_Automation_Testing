@@ -1,0 +1,8 @@
+[INFO] 04-08-2025 04:55:20 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testLogoDisplayed started
+[INFO] 04-08-2025 04:55:20 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:18)] - ===== Starting Home Page Logo Display Test =====
+[INFO] 04-08-2025 04:55:20 [main] [Pages.P01_HomePage.isLogoDisplayed(P01_HomePage.java:28)] - Checking if logo is displayed
+[INFO] 04-08-2025 04:55:20 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:24)] - Logo is displayed successfully
+[INFO] 04-08-2025 04:55:25 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testUserMenuClickable started
+[INFO] 04-08-2025 04:55:25 [main] [Tests.TC01_HomePage.testUserMenuClickable(TC01_HomePage.java:29)] - ===== Starting User Menu Click Test =====
+[INFO] 04-08-2025 04:55:25 [main] [Pages.P01_HomePage.clickMenuUser(P01_HomePage.java:39)] - Clicking on user menu
+[INFO] 04-08-2025 04:55:26 [main] [Tests.TC01_HomePage.testUserMenuClickable(TC01_HomePage.java:35)] - User menu clicked successfully
