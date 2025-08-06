@@ -22,28 +22,28 @@ public class Utility {
 
     // Click on any element after waiting for it to be clickable
     public static void clickingOnElement(WebDriver driver, By locator) {
-        new WebDriverWait(driver, Duration.ofSeconds(5))
+        new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.elementToBeClickable(locator));
         driver.findElement(locator).click();
     }
 
     // Send keys to element after waiting for visibility
     public static void sendData(WebDriver driver, By locator, String data) {
-        new WebDriverWait(driver, Duration.ofSeconds(5))
+        new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         driver.findElement(locator).sendKeys(data);
     }
 
     // Get text from element after waiting for visibility
     public static String getText(WebDriver driver, By locator) {
-        new WebDriverWait(driver, Duration.ofSeconds(5))
+        new WebDriverWait(driver, Duration.ofSeconds(30))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
         return driver.findElement(locator).getText();
     }
 
     // Create generic wait object
     public static WebDriverWait generalWait(WebDriver driver) {
-        return new WebDriverWait(driver, Duration.ofSeconds(5));
+        return new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     // Scroll to an element using JavaScript

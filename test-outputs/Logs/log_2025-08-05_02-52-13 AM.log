@@ -1,0 +1,10 @@
+[INFO] 05-08-2025 02:52:13 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testValidLogin started
+[INFO] 05-08-2025 02:52:13 [main] [Tests.TC02_LoginPage.testValidLogin(TC02_LoginPage.java:28)] - ===== Starting Valid Login Test =====
+[INFO] 05-08-2025 02:52:21 [main] [Pages.P02_LoginPage.enterUsername(P02_LoginPage.java:34)] - Entering username: Maramtest
+[INFO] 05-08-2025 02:52:21 [main] [Pages.P02_LoginPage.enterPassword(P02_LoginPage.java:41)] - Entering password: 123456789Mm
+[INFO] 05-08-2025 02:52:22 [main] [Tests.TC02_LoginPage.testValidLogin(TC02_LoginPage.java:39)] - Assert user is logged in (to be improved later)
+[INFO] 05-08-2025 02:52:30 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testInvalidLogin started
+[INFO] 05-08-2025 02:52:30 [main] [Tests.TC02_LoginPage.testInvalidLogin(TC02_LoginPage.java:46)] - ===== Starting Invalid Login Test =====
+[INFO] 05-08-2025 02:52:31 [main] [Pages.P02_LoginPage.enterUsername(P02_LoginPage.java:34)] - Entering username: wrongUser
+[INFO] 05-08-2025 02:52:31 [main] [Pages.P02_LoginPage.enterPassword(P02_LoginPage.java:41)] - Entering password: wrongPass
+[INFO] 05-08-2025 02:52:37 [main] [Pages.P02_LoginPage.getLoginErrorMessage(P02_LoginPage.java:55)] - Getting login error message

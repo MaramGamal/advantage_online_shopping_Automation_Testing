@@ -1,0 +1,3 @@
+[INFO] 05-08-2025 03:00:35 [main] [Tests.TC03_ProductsPage.testProductDetailsPage(TC03_ProductsPage.java:14)] - ===== Starting Product Details Page Test =====
+[INFO] 05-08-2025 03:00:35 [main] [Pages.P01_HomePage.clickOnSpeakersCategory(P01_HomePage.java:49)] - Clicking on Speakers category
+[INFO] 05-08-2025 03:00:40 [main] [Pages.P01_HomePage.isSpeakerPageOpened(P01_HomePage.java:64)] - Checking if Speaker page header is visible

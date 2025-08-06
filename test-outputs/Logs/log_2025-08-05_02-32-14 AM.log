@@ -1,0 +1,15 @@
+[INFO] 05-08-2025 02:32:15 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testLogoDisplayed started
+[INFO] 05-08-2025 02:32:15 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:19)] - ===== Starting Home Page Logo Display Test =====
+[INFO] 05-08-2025 02:32:15 [main] [Pages.P01_HomePage.isLogoDisplayed(P01_HomePage.java:24)] - Checking if logo is displayed
+[INFO] 05-08-2025 02:32:15 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:25)] - Logo is displayed successfully
+[INFO] 05-08-2025 02:32:25 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testUserMenuClickable started
+[INFO] 05-08-2025 02:32:25 [main] [Tests.TC01_HomePage.testUserMenuClickable(TC01_HomePage.java:30)] - ===== Starting User Menu Click Test =====
+[INFO] 05-08-2025 02:32:25 [main] [Pages.P01_HomePage.clickMenuUser(P01_HomePage.java:35)] - Clicking on user menu
+[INFO] 05-08-2025 02:32:26 [main] [Tests.TC01_HomePage.testUserMenuClickable(TC01_HomePage.java:36)] - User menu clicked successfully
+[INFO] 05-08-2025 02:32:35 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testTabletCategoryRedirect started
+[INFO] 05-08-2025 02:32:35 [main] [Tests.TC01_HomePage.testTabletCategoryRedirect(TC01_HomePage.java:40)] - ===== Starting Tablet Category Redirect Test =====
+[INFO] 05-08-2025 02:32:35 [main] [Pages.P01_HomePage.clickOnTabletsCategory(P01_HomePage.java:40)] - Clicking on Tablets category
+[INFO] 05-08-2025 02:32:40 [main] [Pages.P01_HomePage.isTabletPageOpened(P01_HomePage.java:50)] - Checking if Tablet page header is visible
+[INFO] 05-08-2025 02:32:53 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testSpeakersCategoryRedirect started
+[INFO] 05-08-2025 02:32:53 [main] [Tests.TC01_HomePage.testSpeakersCategoryRedirect(TC01_HomePage.java:52)] - ===== Starting Speakers Category Redirect Test =====
+[INFO] 05-08-2025 02:32:53 [main] [Pages.P01_HomePage.clickOnSpeakersCategory(P01_HomePage.java:45)] - Clicking on Speakers category

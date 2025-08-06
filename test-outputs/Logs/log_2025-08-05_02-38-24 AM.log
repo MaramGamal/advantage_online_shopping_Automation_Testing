@@ -1,0 +1,4 @@
+[INFO] 05-08-2025 02:38:24 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testTabletCategoryRedirect started
+[INFO] 05-08-2025 02:38:24 [main] [Tests.TC01_HomePage.testTabletCategoryRedirect(TC01_HomePage.java:40)] - ===== Starting Tablet Category Redirect Test =====
+[INFO] 05-08-2025 02:38:24 [main] [Pages.P01_HomePage.clickOnTabletsCategory(P01_HomePage.java:39)] - Clicking on Tablets category
+[INFO] 05-08-2025 02:38:28 [main] [Pages.P01_HomePage.isTabletPageOpened(P01_HomePage.java:49)] - Checking if Tablet page header is visible

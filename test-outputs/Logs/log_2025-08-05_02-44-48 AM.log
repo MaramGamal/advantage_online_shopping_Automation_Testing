@@ -1,0 +1,15 @@
+[INFO] 05-08-2025 02:44:49 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testLogoDisplayed started
+[INFO] 05-08-2025 02:44:49 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:25)] - ===== Starting Home Page Logo Display Test =====
+[INFO] 05-08-2025 02:44:49 [main] [Pages.P01_HomePage.isLogoDisplayed(P01_HomePage.java:29)] - Checking if logo is displayed
+[INFO] 05-08-2025 02:44:49 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:31)] - Logo is displayed successfully
+[INFO] 05-08-2025 02:45:00 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickMenuUser started
+[INFO] 05-08-2025 02:45:20 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testTabletCategoryRedirect started
+[INFO] 05-08-2025 02:45:20 [main] [Tests.TC01_HomePage.testTabletCategoryRedirect(TC01_HomePage.java:43)] - ===== Starting Tablet Category Redirect Test =====
+[INFO] 05-08-2025 02:45:20 [main] [Pages.P01_HomePage.clickOnTabletsCategory(P01_HomePage.java:44)] - Clicking on Tablets category
+[INFO] 05-08-2025 02:45:24 [main] [Pages.P01_HomePage.isTabletPageOpened(P01_HomePage.java:53)] - Checking if Tablet page header is visible
+[INFO] 05-08-2025 02:45:38 [main] [Tests.TC01_HomePage.testTabletCategoryRedirect(TC01_HomePage.java:50)] - Tablet page opened successfully
+[INFO] 05-08-2025 02:46:15 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testSpeakersCategoryRedirect started
+[INFO] 05-08-2025 02:46:15 [main] [Tests.TC01_HomePage.testSpeakersCategoryRedirect(TC01_HomePage.java:55)] - ===== Starting Speakers Category Redirect Test =====
+[INFO] 05-08-2025 02:46:15 [main] [Pages.P01_HomePage.clickOnSpeakersCategory(P01_HomePage.java:49)] - Clicking on Speakers category
+[INFO] 05-08-2025 02:46:19 [main] [Pages.P01_HomePage.isSpeakerPageOpened(P01_HomePage.java:64)] - Checking if Speaker page header is visible
+[INFO] 05-08-2025 02:46:25 [main] [Tests.TC01_HomePage.testSpeakersCategoryRedirect(TC01_HomePage.java:62)] - Speakers page opened successfully

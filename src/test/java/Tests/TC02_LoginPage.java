@@ -6,12 +6,17 @@ import Listeners.ITestResultListenerClass;
 import Pages.P02_LoginPage;
 import Utilities.DataUtils;
 import Utilities.LogsUtils;
+import io.qameta.allure.Allure;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.time.Duration;
 
@@ -33,12 +38,8 @@ public class TC02_LoginPage extends BaseTest {
         loginPage.enterPassword(DataUtils.getProperty("valid.password"));
         loginPage.clickSignIn();
 
-        // هنا ممكن تضيف انتظار أو تحقق مثلاً من وجود عنصر يدل على نجاح تسجيل الدخول
-        // مثلا عنصر المستخدم أو زر تسجيل الخروج
 
         LogsUtils.info("Assert user is logged in (to be improved later)");
-        // مثال على Assertion مبدئي (محتاج تعديل حسب الصفحة بعد اللوج إن)
-        // Assert.assertTrue(someElement.isDisplayed());
     }
 
     @Test(priority = 2, description = "Login with invalid credentials")
@@ -54,6 +55,21 @@ public class TC02_LoginPage extends BaseTest {
         String errorMsg = loginPage.getLoginErrorMessage();
         Assert.assertTrue(errorMsg.contains("Incorrect"), "Expected error message not displayed");
         LogsUtils.info("Login error message displayed as expected");
+    }
+    @AfterMethod
+    public void takeScreenshotOnFailure(ITestResult result) {
+        if (ITestResult.FAILURE == result.getStatus()) {
+            try {
+                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+
+                Allure.addAttachment("Screenshot on Failure - " + result.getName(),
+                        new ByteArrayInputStream(screenshot));
+
+                LogsUtils.info("Screenshot attached to Allure report for failed test: " + result.getName());
+            } catch (Exception e) {
+                LogsUtils.error("Exception while taking screenshot: " + e.getMessage());
+            }
+        }
     }
 }
 

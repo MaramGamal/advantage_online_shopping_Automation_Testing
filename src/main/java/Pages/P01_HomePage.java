@@ -45,7 +45,7 @@ public class P01_HomePage {
         wait.until(ExpectedConditions.elementToBeClickable(tabletsCategory)).click();
     }
 
-    public void clickOnSpeakersCategory() {
+    public  void clickOnSpeakersCategory() {
         LogsUtils.info("Clicking on Speakers category");
         wait.until(ExpectedConditions.elementToBeClickable(speakersCategory)).click();
     }
