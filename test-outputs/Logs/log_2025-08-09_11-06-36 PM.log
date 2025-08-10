@@ -1,0 +1,5 @@
+[INFO] 09-08-2025 23:06:36 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testSpeakersCategoryRedirect started
+[INFO] 09-08-2025 23:06:36 [main] [Tests.TC01_HomePage.testSpeakersCategoryRedirect(TC01_HomePage.java:63)] - ===== Starting Speakers Category Redirect Test =====
+[INFO] 09-08-2025 23:06:36 [main] [Pages.P01_HomePage.clickOnSpeakersCategory(P01_HomePage.java:50)] - Clicking on Speakers category
+[INFO] 09-08-2025 23:06:43 [main] [Pages.P01_HomePage.isSpeakerPageOpened(P01_HomePage.java:65)] - Checking if Speaker page header is visible
+[INFO] 09-08-2025 23:06:47 [main] [Tests.TC01_HomePage.testSpeakersCategoryRedirect(TC01_HomePage.java:70)] - Speakers page opened successfully

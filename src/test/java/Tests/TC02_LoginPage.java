@@ -28,7 +28,7 @@ import static Utilities.DataUtils.getPropertyValue;
 
 public class TC02_LoginPage extends BaseTest {
 
-    @Test(priority = 1, description = "Login with valid credentials")
+    @Test(description = "Login with valid credentials")
     public void testValidLogin() {
         LogsUtils.info("===== Starting Valid Login Test =====");
         P02_LoginPage loginPage = new P02_LoginPage();
@@ -42,7 +42,7 @@ public class TC02_LoginPage extends BaseTest {
         LogsUtils.info("Assert user is logged in (to be improved later)");
     }
 
-    @Test(priority = 2, description = "Login with invalid credentials")
+    @Test(description = "Login with invalid credentials")
     public void testInvalidLogin() {
         LogsUtils.info("===== Starting Invalid Login Test =====");
         P02_LoginPage loginPage = new P02_LoginPage();
@@ -56,20 +56,6 @@ public class TC02_LoginPage extends BaseTest {
         Assert.assertTrue(errorMsg.contains("Incorrect"), "Expected error message not displayed");
         LogsUtils.info("Login error message displayed as expected");
     }
-    @AfterMethod
-    public void takeScreenshotOnFailure(ITestResult result) {
-        if (ITestResult.FAILURE == result.getStatus()) {
-            try {
-                byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 
-                Allure.addAttachment("Screenshot on Failure - " + result.getName(),
-                        new ByteArrayInputStream(screenshot));
-
-                LogsUtils.info("Screenshot attached to Allure report for failed test: " + result.getName());
-            } catch (Exception e) {
-                LogsUtils.error("Exception while taking screenshot: " + e.getMessage());
-            }
-        }
-    }
 }
 

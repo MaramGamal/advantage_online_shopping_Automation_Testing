@@ -33,15 +33,13 @@ public class P03_ProductsPage {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         WebElement product = wait.until(ExpectedConditions.visibilityOfElementLocated(firstProduct));
 
-        // Scroll to element
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", product);
 
-        // Use FluentWait instead of sleep
         Wait<WebDriver> fluentWait = new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(10))  // 👈 أقصى وقت هينتظر
-                .pollingEvery(Duration.ofMillis(500)) // 👈 كل 0.5 ثانية هيجرب
-                .ignoring(ElementClickInterceptedException.class) // 👈 لو العنصر لسه مش جاهز، يتجاهل الغلطة دي
-                .ignoring(ElementNotInteractableException.class); // 👈 احتمال يظهر الخطأ دا برده لو مش جاهز
+                .withTimeout(Duration.ofSeconds(10))
+                .pollingEvery(Duration.ofMillis(500))
+                .ignoring(ElementClickInterceptedException.class)
+                .ignoring(ElementNotInteractableException.class);
 
         fluentWait.until(driver -> {
             try {

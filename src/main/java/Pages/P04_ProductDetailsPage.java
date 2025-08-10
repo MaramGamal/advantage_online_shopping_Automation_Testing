@@ -2,7 +2,12 @@ package Pages;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.time.Duration;
+
+import static org.apache.commons.io.FileUtils.waitFor;
 
 public class P04_ProductDetailsPage {
 
@@ -15,32 +20,37 @@ public class P04_ProductDetailsPage {
 
     // ========== Elements ==========
 
-    @FindBy(css = ".roboto-regular.screen768.ng-binding") // اسم المنتج
+    @FindBy(css = ".roboto-regular.screen768.ng-binding")
     public WebElement productName;
 
     @FindBy(css = "body div[class='uiview ng-scope'] section[class='ng-scope'] article[class='max-width '] div[id='product_2'] div[id='Description'] h2:nth-child(1)") // السعر
     public WebElement productPrice;
 
-    @FindBy(css = "p[class='roboto-light ng-binding']") // وصف المنتج
+    @FindBy(css = "p[class='roboto-light ng-binding']")
     public WebElement productDescription;
 
-    @FindBy(css = ".plus") // زر زيادة الكمية
+    @FindBy(css = ".plus")
     public WebElement plusButton;
 
-    @FindBy(css = ".minus") // زر تقليل الكمية
+    @FindBy(css = ".minus")
     public WebElement minusButton;
 
-    @FindBy(css = "input[name='quantity']") // خانة الكمية نفسها
+    @FindBy(css = "input[name='quantity']")
     public WebElement quantityInput;
 
-    @FindBy(xpath = "(//input[@name='quantity'])[1]") // اللون الافتراضي (أسود مثلاً)
+    @FindBy(xpath = "(//input[@name='quantity'])[1]")
     public WebElement defaultColor;
 
-    @FindBy(css = "button[name='save_to_cart']") // زر Add to Cart
+    @FindBy(css = "button[name='save_to_cart']")
     public WebElement addToCartButton;
 
-    @FindBy(css = ".minus.disableBtn") // الماينص disabled
+    @FindBy(css = ".minus.disableBtn")
     public WebElement minusDisabled;
+    @FindBy(css = "#menuCart")  // ده السلكتور بتاع أيقونة الكارت
+    public WebElement cartIcon;
+
+
+
 
     // ========== Actions ==========
 
@@ -72,7 +82,7 @@ public class P04_ProductDetailsPage {
         try {
             return Integer.parseInt(quantityInput.getAttribute("value"));
         } catch (NumberFormatException e) {
-            return 1; // fallback
+            return 1;
         }
     }
 
@@ -95,5 +105,28 @@ public class P04_ProductDetailsPage {
     public boolean isColorDisplayed() {
         return defaultColor.isDisplayed();
     }
+    public void waitFor(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+    public void clickCartIconTwice() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.loader")));
+
+        wait.until(ExpectedConditions.elementToBeClickable(cartIcon));
+        cartIcon.click();
+
+        try {
+            Thread.sleep(500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        wait.until(ExpectedConditions.elementToBeClickable(cartIcon));
+        cartIcon.click();
+    }
 }

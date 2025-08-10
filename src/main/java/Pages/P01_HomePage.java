@@ -1,6 +1,7 @@
 package Pages;
 
 import Utilities.LogsUtils;
+import Utilities.Utility;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -11,13 +12,13 @@ public class P01_HomePage {
     WebDriver driver;
     WebDriverWait wait;
 
-    private By logo =  By.cssSelector("a[ng-click='go_up()']");
-    private By searchButton = By.id("search_button");
-    private By menuUser = By.id("menuUser");
-    private By tabletsCategory = By.id("tabletsImg");
-    private By speakersCategory = By.id("speakersImg");
-    private By tabletHeader = By.cssSelector("h3.categoryTitle");
-    private By speakersHeader = By.cssSelector("h3[class*='Speaker']");
+    private final By logo =  By.cssSelector("a[ng-click='go_up()']");
+    private final By searchButton = By.id("search_button");
+    private final By menuUser = By.id("menuUser");
+    private final By tabletsCategory = By.id("tabletsImg");
+    private final By speakersCategory = By.id("speakersImg");
+    private final By tabletHeader = By.cssSelector("h3.categoryTitle");
+    private final By speakersHeader = By.cssSelector("h3[class*='Speaker']");
 
 
     public P01_HomePage(WebDriver driver) {

@@ -3,11 +3,18 @@ package Tests;
 import Base.BaseTest;
 import Pages.P03_ProductsPage;
 import Utilities.DataUtils;
+import Utilities.LogsUtils;
+import io.qameta.allure.Allure;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
+import java.io.ByteArrayInputStream;
 import java.time.Duration;
 
 public class TC03_ProductsPage extends BaseTest {
@@ -23,7 +30,6 @@ public class TC03_ProductsPage extends BaseTest {
         productPage.scrollToFirstProduct();
         productPage.clickOnFirstProduct();
 
-        // Explicit wait لحد ما URL يحتوي على "/product/"
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         wait.until(ExpectedConditions.urlContains("/product/"));
 
@@ -32,4 +38,5 @@ public class TC03_ProductsPage extends BaseTest {
 
         Assert.assertEquals(actualUrl, expectedUrl, "Didn't navigate to correct product URL!");
     }
+
 }

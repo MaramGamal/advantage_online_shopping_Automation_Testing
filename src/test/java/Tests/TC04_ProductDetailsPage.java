@@ -9,7 +9,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import Utilities.DataUtils;
-import Utilities.LogsUtils;
 
 
 import java.time.Duration;
@@ -64,5 +63,10 @@ public class TC04_ProductDetailsPage extends BaseTest {
         Assert.assertTrue(productDetailsPage.isAddToCartButtonDisplayed(), "Add to Cart button is not displayed");
         productDetailsPage.clickAddToCart();
         softAssert.assertAll();
+        productDetailsPage.clickAddToCart();
+        productDetailsPage.clickCartIconTwice();
+        Assert.assertEquals(driver.getCurrentUrl(), "https://advantageonlineshopping.com/#/shoppingCart", "Failed to navigate to Cart page");
+
     }
+
 }
