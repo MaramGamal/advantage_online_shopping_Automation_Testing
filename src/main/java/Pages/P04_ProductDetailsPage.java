@@ -48,6 +48,8 @@ public class P04_ProductDetailsPage {
     public WebElement minusDisabled;
     @FindBy(css = "#menuCart")  // ده السلكتور بتاع أيقونة الكارت
     public WebElement cartIcon;
+    private final By checkoutPopUpButton = By.cssSelector("#checkOutPopUp");
+
 
 
 
@@ -128,5 +130,12 @@ public class P04_ProductDetailsPage {
 
         wait.until(ExpectedConditions.elementToBeClickable(cartIcon));
         cartIcon.click();
+    }
+    public void clickCheckoutPopUp() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.loader")));
+
+        wait.until(ExpectedConditions.elementToBeClickable(checkoutPopUpButton));
     }
 }

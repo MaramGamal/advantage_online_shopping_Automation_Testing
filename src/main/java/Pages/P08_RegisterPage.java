@@ -65,7 +65,9 @@ public class P08_RegisterPage {
     @FindBy(css = "#register_btn")
     WebElement registerButton;
 
-    // Methods to interact with the fields
+    public WebElement getUsernameField() {
+        return usernameField;
+    }
 
     public void enterUsername(String username) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));

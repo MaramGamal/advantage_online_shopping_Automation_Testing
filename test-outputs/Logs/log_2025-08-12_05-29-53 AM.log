@@ -1,0 +1,11 @@
+[INFO] 12-08-2025 05:29:54 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickMenuUser started
+[INFO] 12-08-2025 05:29:54 [main] [Tests.TC01_HomePage.clickMenuUser(TC01_HomePage.java:32)] - User menu is clickable
+[INFO] 12-08-2025 05:29:57 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testLogoDisplayed started
+[INFO] 12-08-2025 05:29:58 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:22)] - ===== Starting Home Page Logo Display Test =====
+[INFO] 12-08-2025 05:29:58 [main] [Pages.P01_HomePage.isLogoDisplayed(P01_HomePage.java:30)] - Checking if logo is displayed
+[INFO] 12-08-2025 05:29:58 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:24)] - Logo is displayed successfully
+[INFO] 12-08-2025 05:30:01 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testSpeakersCategoryRedirect started
+[INFO] 12-08-2025 05:30:01 [main] [Tests.TC01_HomePage.testSpeakersCategoryRedirect(TC01_HomePage.java:45)] - ===== Starting Speakers Category Redirect Test =====
+[INFO] 12-08-2025 05:30:01 [main] [Pages.P01_HomePage.clickOnSpeakersCategory(P01_HomePage.java:50)] - Clicking on Speakers category
+[INFO] 12-08-2025 05:30:07 [main] [Pages.P01_HomePage.isSpeakerPageOpened(P01_HomePage.java:65)] - Checking if Speaker page header is visible
+[INFO] 12-08-2025 05:30:11 [main] [Tests.TC01_HomePage.testSpeakersCategoryRedirect(TC01_HomePage.java:48)] - Speakers page opened successfully

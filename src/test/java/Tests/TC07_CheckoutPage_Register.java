@@ -1,7 +1,9 @@
 package Tests;
+
 import Base.BaseTest;
 import Pages.P07_CheckoutPage_Register;
 import Utilities.DataUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -9,7 +11,13 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
+
+
 public class TC07_CheckoutPage_Register extends BaseTest {
+
+    public TC07_CheckoutPage_Register(WebDriver driver) {
+        super();
+    }
 
     @Test
     public void verifyRedirectToLoginWhenNotLoggedIn() {
@@ -23,7 +31,7 @@ public class TC07_CheckoutPage_Register extends BaseTest {
     }
 
     @Test
-    public void verifyCheckoutPageWhenLoggedIn() {
+    public void verifyCheckoutSafePayFlow() {
         P07_CheckoutPage_Register checkoutPage = new P07_CheckoutPage_Register(driver);
 
         driver.get(DataUtils.getProperty("Checkout.url"));
@@ -40,6 +48,12 @@ public class TC07_CheckoutPage_Register extends BaseTest {
 
                 Assert.assertTrue(driver.getCurrentUrl().contains("/register"),
                         "Expected to be redirected to register page when clicking register button");
+
+
+                driver.get(DataUtils.getProperty("Checkout.url"));
+
+                checkoutPage.proceedSafePayFlow();
+
             } else {
                 Assert.assertTrue(
                         checkoutPage.isCheckoutFormDisplayed(),

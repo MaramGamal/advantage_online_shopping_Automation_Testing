@@ -42,7 +42,6 @@ public class P05_CartPage {
         return driver.findElement(By.name("remove")).isDisplayed();
     }
 
-    // ✅ طريقة للضغط على checkout
     public void clickCheckoutButton() {
         driver.findElement(checkoutBtn).click();
     }

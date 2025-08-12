@@ -1,0 +1,12 @@
+[INFO] 12-08-2025 02:30:03 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:26)] - ===== Starting Home Page Logo Display Test =====
+[INFO] 12-08-2025 02:30:03 [main] [Pages.P01_HomePage.isLogoDisplayed(P01_HomePage.java:30)] - Checking if logo is displayed
+[INFO] 12-08-2025 02:30:03 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:28)] - Logo is displayed successfully
+[INFO] 12-08-2025 02:30:03 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:32)] - User menu is clickable
+[INFO] 12-08-2025 02:30:03 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:33)] - ===== Starting Speakers Category Redirect Test =====
+[INFO] 12-08-2025 02:30:03 [main] [Pages.P01_HomePage.clickOnSpeakersCategory(P01_HomePage.java:50)] - Clicking on Speakers category
+[INFO] 12-08-2025 02:30:08 [main] [Pages.P01_HomePage.isSpeakerPageOpened(P01_HomePage.java:65)] - Checking if Speaker page header is visible
+[INFO] 12-08-2025 02:30:12 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:36)] - Speakers page opened successfully
+[INFO] 12-08-2025 02:30:13 [main] [Pages.P02_LoginPage.enterUsername(P02_LoginPage.java:34)] - Entering username: Maramtest
+[INFO] 12-08-2025 02:30:14 [main] [Pages.P02_LoginPage.enterPassword(P02_LoginPage.java:41)] - Entering password: 123456789Mm
+[INFO] 12-08-2025 02:30:14 [main] [Tests.TC10_E2E.Login(TC10_E2E.java:45)] - Assert user is logged in (to be improved later)
+[INFO] 12-08-2025 02:30:21 [main] [Tests.TC10_E2E.Cart(TC10_E2E.java:108)] - The cart contains at least one product.

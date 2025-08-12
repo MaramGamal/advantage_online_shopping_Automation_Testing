@@ -1,0 +1,20 @@
+[INFO] 12-08-2025 04:25:23 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case Home started
+[INFO] 12-08-2025 04:25:23 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:30)] - ===== Starting Home Page Logo Display Test =====
+[INFO] 12-08-2025 04:25:23 [main] [Pages.P01_HomePage.isLogoDisplayed(P01_HomePage.java:30)] - Checking if logo is displayed
+[INFO] 12-08-2025 04:25:23 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:33)] - Logo is displayed successfully
+[INFO] 12-08-2025 04:25:23 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:38)] - User menu is clickable
+[INFO] 12-08-2025 04:25:23 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:40)] - ===== Starting Speakers Category Redirect Test =====
+[INFO] 12-08-2025 04:25:23 [main] [Pages.P01_HomePage.clickOnSpeakersCategory(P01_HomePage.java:50)] - Clicking on Speakers category
+[INFO] 12-08-2025 04:25:34 [main] [Pages.P01_HomePage.isSpeakerPageOpened(P01_HomePage.java:65)] - Checking if Speaker page header is visible
+[INFO] 12-08-2025 04:25:43 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:43)] - Speakers page opened successfully
+[INFO] 12-08-2025 04:25:43 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case Login started
+[INFO] 12-08-2025 04:25:43 [main] [Pages.P02_LoginPage.enterUsername(P02_LoginPage.java:34)] - Entering username: Maramtest
+[INFO] 12-08-2025 04:25:44 [main] [Pages.P02_LoginPage.enterPassword(P02_LoginPage.java:41)] - Entering password: 123456789Mm
+[INFO] 12-08-2025 04:25:44 [main] [Tests.TC10_E2E.Login(TC10_E2E.java:55)] - Assert user is logged in (to be improved later)
+[INFO] 12-08-2025 04:25:44 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case Products started
+[INFO] 12-08-2025 04:25:46 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case Details started
+[INFO] 12-08-2025 04:25:52 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case Cart started
+[INFO] 12-08-2025 04:25:52 [main] [Tests.TC10_E2E.Cart(TC10_E2E.java:123)] - The cart contains at least one product.
+[INFO] 12-08-2025 04:25:55 [main] [Tests.TC10_E2E.Cart(TC10_E2E.java:128)] - Successfully navigated to the Checkout page.
+[INFO] 12-08-2025 04:25:55 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case Checklogin started
+[INFO] 12-08-2025 04:26:04 [main] [Tests.TC10_E2E.Checklogin(TC10_E2E.java:161)] - Order number: Your tracking number is 8173601994 | Your order number is 8173637475

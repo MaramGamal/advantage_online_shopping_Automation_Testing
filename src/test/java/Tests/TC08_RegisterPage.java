@@ -9,8 +9,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import Pages.P08_RegisterPage;
-
 import java.time.Duration;
+
+
 
 public class TC08_RegisterPage extends BaseTest {
 

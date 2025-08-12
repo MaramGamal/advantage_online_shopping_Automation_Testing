@@ -21,7 +21,6 @@
         <allure.version>2.24.0</allure.version>
         <javafaker.version>1.0.2</javafaker.version>
         <surefire.version>3.1.2</surefire.version>
-        <aspectj.version>1.9.21</aspectj.version>
         <commons-io.version>2.11.0</commons-io.version>
     </properties>
 
@@ -33,9 +32,7 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${surefire.version}</version>
                 <configuration>
-                    <argLine>
-                        --enable-preview -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                    </argLine>
+                    <argLine>--enable-preview</argLine>
                     <suiteXmlFiles>
                         <suiteXmlFile>src/test/resources/Testing.xml</suiteXmlFile>
                     </suiteXmlFiles>
@@ -135,14 +132,6 @@
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j.version}</version>
             <scope>test</scope>
-        </dependency>
-
-        <!-- AspectJ for Allure -->
-        <dependency>
-            <groupId>org.aspectj</groupId>
-            <artifactId>aspectjweaver</artifactId>
-            <version>${aspectj.version}</version>
-            <scope>runtime</scope>
         </dependency>
     </dependencies>
 </project>

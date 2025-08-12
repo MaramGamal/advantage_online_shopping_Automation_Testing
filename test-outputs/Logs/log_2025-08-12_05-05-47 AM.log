@@ -1,0 +1,9 @@
+[INFO] 12-08-2025 05:05:47 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case Home started
+[INFO] 12-08-2025 05:05:47 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:30)] - ===== Starting Home Page Logo Display Test =====
+[INFO] 12-08-2025 05:05:47 [main] [Pages.P01_HomePage.isLogoDisplayed(P01_HomePage.java:30)] - Checking if logo is displayed
+[INFO] 12-08-2025 05:05:47 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:33)] - Logo is displayed successfully
+[INFO] 12-08-2025 05:05:59 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:38)] - User menu is clickable
+[INFO] 12-08-2025 05:05:59 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:40)] - ===== Starting Speakers Category Redirect Test =====
+[INFO] 12-08-2025 05:05:59 [main] [Pages.P01_HomePage.clickOnSpeakersCategory(P01_HomePage.java:50)] - Clicking on Speakers category
+[INFO] 12-08-2025 05:05:59 [main] [Pages.P01_HomePage.isSpeakerPageOpened(P01_HomePage.java:65)] - Checking if Speaker page header is visible
+[INFO] 12-08-2025 05:06:07 [main] [Tests.TC10_E2E.Home(TC10_E2E.java:43)] - Speakers page opened successfully

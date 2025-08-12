@@ -1,6 +1,7 @@
 package Pages;
 
 import Utilities.DataUtils;
+import Utilities.LogsUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +9,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import Utilities.LogsUtils;
 
 import java.time.Duration;
 
@@ -35,6 +35,21 @@ public class P07_CheckoutPage_Register {
     @FindBy(css = "checkout-page div#userDetails")
     public WebElement checkoutForm;
 
+    // الزر Next بالـ CSS اللي انت بعتهولي
+    @FindBy(css = "body > div:nth-child(8) > section:nth-child(2) > article:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1)")
+    public WebElement nextButton;
+
+    // حقول SafePay اليوزرنيم والباسورد
+    @FindBy(css = "input[name='safepay_username']")
+    public WebElement safepayUsernameInput;
+
+    @FindBy(css = "input[name='safepay_password']")
+    public WebElement safepayPasswordInput;
+
+    // زر Pay Now
+    @FindBy(css = "#pay_now_btn_SAFEPAY")
+    public WebElement payNowButton;
+
 
     public boolean isLoginSectionDisplayed() {
         try {
@@ -58,10 +73,6 @@ public class P07_CheckoutPage_Register {
         } catch (Exception e) {
             return false;
         }
-    }
-
-    public WebElement getCheckoutFormElement() {
-        return checkoutForm;
     }
 
     public void printPageState() {
@@ -106,5 +117,25 @@ public class P07_CheckoutPage_Register {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(registerButton));
         registerButton.click();
+    }
+
+
+    public void proceedSafePayFlow() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+
+        wait.until(ExpectedConditions.elementToBeClickable(nextButton));
+        nextButton.click();
+
+        wait.until(ExpectedConditions.visibilityOf(safepayUsernameInput));
+        wait.until(ExpectedConditions.visibilityOf(safepayPasswordInput));
+
+        String safepayUsername = DataUtils.getProperty("safepay.username");
+        String safepayPassword = DataUtils.getProperty("safepay.password");
+
+        safepayUsernameInput.sendKeys(safepayUsername);
+        safepayPasswordInput.sendKeys(safepayPassword);
+
+        wait.until(ExpectedConditions.elementToBeClickable(payNowButton));
+        payNowButton.click();
     }
 }

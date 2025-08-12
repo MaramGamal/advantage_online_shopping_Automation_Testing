@@ -1,0 +1,7 @@
+[INFO] 12-08-2025 05:03:40 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testInvalidLogin started
+[INFO] 12-08-2025 05:03:40 [main] [Tests.TC02_LoginPage.testInvalidLogin(TC02_LoginPage.java:34)] - ===== Starting Invalid Login Test =====
+[INFO] 12-08-2025 05:03:48 [main] [Pages.P02_LoginPage.enterUsername(P02_LoginPage.java:34)] - Entering username: wrongUser
+[INFO] 12-08-2025 05:03:49 [main] [Pages.P02_LoginPage.enterPassword(P02_LoginPage.java:41)] - Entering password: wrongPass
+[INFO] 12-08-2025 05:03:49 [main] [Pages.P02_LoginPage.getLoginErrorMessage(P02_LoginPage.java:55)] - Getting login error message
+[INFO] 12-08-2025 05:04:00 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testValidLogin started
+[INFO] 12-08-2025 05:04:00 [main] [Tests.TC02_LoginPage.testValidLogin(TC02_LoginPage.java:21)] - ===== Starting Valid Login Test =====

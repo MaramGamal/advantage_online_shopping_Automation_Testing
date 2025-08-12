@@ -3,14 +3,17 @@ package Tests;
 import Base.BaseTest;
 import Pages.P06_CheckoutPage_Login;
 import Utilities.DataUtils;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.time.Duration;
 
+
+
 public class TC06_CheckoutPage_Login extends BaseTest {
+
 
     @Test
     public void verifyRedirectToLoginWhenNotLoggedIn() {
@@ -24,11 +27,10 @@ public class TC06_CheckoutPage_Login extends BaseTest {
     }
 
     @Test
-    public void verifyCheckoutPageWhenLoggedIn() {
+    public void verifyCheckoutSafePayFlow() {
         P06_CheckoutPage_Login checkoutPage = new P06_CheckoutPage_Login(driver);
 
         if (!checkoutPage.isUserLoggedIn()) {
-
             checkoutPage.login();
         }
 
@@ -39,9 +41,14 @@ public class TC06_CheckoutPage_Login extends BaseTest {
             Assert.fail("Cart is empty. Redirected to Home page.");
         }
 
-        Assert.assertTrue(
-                checkoutPage.isCheckoutFormDisplayed(),
-                "Checkout form should be displayed for logged in users."
-        );
+        Assert.assertTrue(checkoutPage.isCheckoutFormDisplayed(),
+                "Checkout form should be displayed for logged in users.");
+
+        checkoutPage.clickNextButton();
+
+        checkoutPage.fillSafePayDetails();
+
+        checkoutPage.clickPayNowButton();
+
     }
 }

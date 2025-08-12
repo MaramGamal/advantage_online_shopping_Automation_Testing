@@ -19,9 +19,9 @@ public class P02_LoginPage {
     private By signInButton = By.id("sign_in_btn");
     private By errorMessage = By.cssSelector(".login-error.ng-binding");
 
-    public P02_LoginPage() {
+    public P02_LoginPage(WebDriver driver) {
         this.driver = DriverFactory.getDriver();
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(10));
     }
 
     public void clickLoginIcon() {
