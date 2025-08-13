@@ -1,0 +1,16 @@
+[INFO] 12-08-2025 06:06:50 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case clickMenuUser started
+[INFO] 12-08-2025 06:06:50 [main] [Tests.TC01_HomePage.clickMenuUser(TC01_HomePage.java:31)] - User menu is clickable
+[INFO] 12-08-2025 06:06:53 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testLogoDisplayed started
+[INFO] 12-08-2025 06:06:53 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:22)] - ===== Starting Home Page Logo Display Test =====
+[INFO] 12-08-2025 06:06:53 [main] [Pages.P01_HomePage.isLogoDisplayed(P01_HomePage.java:30)] - Checking if logo is displayed
+[INFO] 12-08-2025 06:06:53 [main] [Tests.TC01_HomePage.testLogoDisplayed(TC01_HomePage.java:24)] - Logo is displayed successfully
+[INFO] 12-08-2025 06:06:58 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testSpeakersCategoryRedirect started
+[INFO] 12-08-2025 06:06:58 [main] [Tests.TC01_HomePage.testSpeakersCategoryRedirect(TC01_HomePage.java:44)] - ===== Starting Speakers Category Redirect Test =====
+[INFO] 12-08-2025 06:06:58 [main] [Pages.P01_HomePage.clickOnSpeakersCategory(P01_HomePage.java:50)] - Clicking on Speakers category
+[INFO] 12-08-2025 06:07:04 [main] [Pages.P01_HomePage.isSpeakerPageOpened(P01_HomePage.java:65)] - Checking if Speaker page header is visible
+[INFO] 12-08-2025 06:07:07 [main] [Tests.TC01_HomePage.testSpeakersCategoryRedirect(TC01_HomePage.java:47)] - Speakers page opened successfully
+[INFO] 12-08-2025 06:07:11 [main] [Listeners.ITestResultListenerClass.onTestStart(ITestResultListenerClass.java:10)] - Test Case testTabletCategoryRedirect started
+[INFO] 12-08-2025 06:07:11 [main] [Tests.TC01_HomePage.testTabletCategoryRedirect(TC01_HomePage.java:36)] - ===== Starting Tablet Category Redirect Test =====
+[INFO] 12-08-2025 06:07:11 [main] [Pages.P01_HomePage.clickOnTabletsCategory(P01_HomePage.java:45)] - Clicking on Tablets category
+[INFO] 12-08-2025 06:07:17 [main] [Pages.P01_HomePage.isTabletPageOpened(P01_HomePage.java:54)] - Checking if Tablet page header is visible
+[INFO] 12-08-2025 06:07:21 [main] [Tests.TC01_HomePage.testTabletCategoryRedirect(TC01_HomePage.java:39)] - Tablet page opened successfully

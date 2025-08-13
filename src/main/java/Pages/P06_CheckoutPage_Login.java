@@ -96,7 +96,6 @@ public class P06_CheckoutPage_Login {
 
         driver.findElement(By.cssSelector("#login_btn")).click();
 
-        // انتظار ظهور زر الـ Next بعد تسجيل الدخول
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("body > div:nth-child(8) > section:nth-child(2) > article:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1)")));
     }
 
@@ -104,23 +103,20 @@ public class P06_CheckoutPage_Login {
     public void clickNextButton() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
-        // استنى الـ loader يختفي
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("div.loader")));
 
-        // استنى الزرار يكون clickable
         WebElement nextBtn = wait.until(ExpectedConditions.elementToBeClickable(nextButton));
 
-        // اضغط على الزرار
         nextBtn.click();
     }
 
 
     public void fillSafePayDetails() {
         wait.until(ExpectedConditions.visibilityOf(safePayUsernameField));
-        safePayUsernameField.clear(); // يمسح المحتوى القديم
+        safePayUsernameField.clear();
         safePayUsernameField.sendKeys(DataUtils.getProperty("safepay.username"));
 
-        safePayPasswordField.clear(); // يمسح المحتوى القديم
+        safePayPasswordField.clear();
         safePayPasswordField.sendKeys(DataUtils.getProperty("safepay.password"));
     }
 

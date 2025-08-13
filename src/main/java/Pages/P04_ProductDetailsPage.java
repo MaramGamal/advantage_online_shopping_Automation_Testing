@@ -18,7 +18,6 @@ public class P04_ProductDetailsPage {
         PageFactory.initElements(driver, this);
     }
 
-    // ========== Elements ==========
 
     @FindBy(css = ".roboto-regular.screen768.ng-binding")
     public WebElement productName;
@@ -46,15 +45,12 @@ public class P04_ProductDetailsPage {
 
     @FindBy(css = ".minus.disableBtn")
     public WebElement minusDisabled;
-    @FindBy(css = "#menuCart")  // ده السلكتور بتاع أيقونة الكارت
+    @FindBy(css = "#menuCart")
     public WebElement cartIcon;
     private final By checkoutPopUpButton = By.cssSelector("#checkOutPopUp");
 
 
 
-
-
-    // ========== Actions ==========
 
     public String getProductName() {
         return productName.getText().trim();

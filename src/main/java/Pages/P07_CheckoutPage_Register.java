@@ -35,18 +35,15 @@ public class P07_CheckoutPage_Register {
     @FindBy(css = "checkout-page div#userDetails")
     public WebElement checkoutForm;
 
-    // الزر Next بالـ CSS اللي انت بعتهولي
     @FindBy(css = "body > div:nth-child(8) > section:nth-child(2) > article:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) > button:nth-child(1)")
     public WebElement nextButton;
 
-    // حقول SafePay اليوزرنيم والباسورد
     @FindBy(css = "input[name='safepay_username']")
     public WebElement safepayUsernameInput;
 
     @FindBy(css = "input[name='safepay_password']")
     public WebElement safepayPasswordInput;
 
-    // زر Pay Now
     @FindBy(css = "#pay_now_btn_SAFEPAY")
     public WebElement payNowButton;
 

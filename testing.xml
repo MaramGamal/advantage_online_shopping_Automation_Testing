@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="Simple Automation Suite">
-    <test name="Login Test">
+    <test name="Test">
         <classes>
             <class name="Tests.TC10_E2E"/>
         </classes>

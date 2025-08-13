@@ -112,15 +112,12 @@ public class P08_RegisterPage {
     }
 
     public void selectCountry(String countryName) {
-        // Scroll down first to make dropdown visible
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true);", countryDropdown);
 
-        // Wait if needed
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.elementToBeClickable(countryDropdown));
 
-        // Then select the country
         Select select = new Select(countryDropdown);
         select.selectByIndex(0); }
 

@@ -24,6 +24,9 @@ public class BaseTest {
     protected P04_ProductDetailsPage productDetailsPage;
     protected P05_CartPage cartPage;
     protected  P06_CheckoutPage_Login checkoutPageLogin;
+    protected P07_CheckoutPage_Register checkoutPageRegister;
+    protected P08_RegisterPage Register;
+    protected P09_CheckoutFlow Flow;
     public WebDriver driver;
 
 
@@ -40,6 +43,9 @@ public class BaseTest {
         productDetailsPage=new P04_ProductDetailsPage(driver);
         cartPage=new P05_CartPage(driver);
         checkoutPageLogin= new P06_CheckoutPage_Login(driver);
+        checkoutPageRegister=new P07_CheckoutPage_Register(driver);
+        Register=new P08_RegisterPage(driver);
+        Flow=new P09_CheckoutFlow(driver);
 
 
 

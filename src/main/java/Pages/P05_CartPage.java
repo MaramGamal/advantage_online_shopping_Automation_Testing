@@ -10,11 +10,9 @@ public class P05_CartPage {
         this.driver = driver;
     }
 
-    // Locator لعناصر الكارت
     private By cartEmptyMessage = By.xpath("//label[contains(text(),'Your shopping cart is empty')]");
     private By checkoutBtn = By.id("checkOutButton");
 
-    // ✅ طريقة للتحقق إذا الكارت فاضي
     public boolean isCartEmpty() {
         return driver.findElements(cartEmptyMessage).size() > 0;
     }

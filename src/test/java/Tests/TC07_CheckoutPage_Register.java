@@ -15,10 +15,6 @@ import java.time.Duration;
 
 public class TC07_CheckoutPage_Register extends BaseTest {
 
-    public TC07_CheckoutPage_Register(WebDriver driver) {
-        super();
-    }
-
     @Test
     public void verifyRedirectToLoginWhenNotLoggedIn() {
         driver.get(DataUtils.getProperty("Checkout.url"));

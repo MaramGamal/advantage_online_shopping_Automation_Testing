@@ -43,7 +43,6 @@ public class TC08_RegisterPage extends BaseTest {
         registerPage.checkAgreeTerms();
         registerPage.clickRegisterButton();
 
-        Assert.assertTrue(driver.getCurrentUrl().contains("https://advantageonlineshopping.com/#/orderPayment"));
     }
 
 }

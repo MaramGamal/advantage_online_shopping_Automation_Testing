@@ -14,9 +14,6 @@ import java.time.Duration;
 
 public class TC09_CheckoutFlow extends BaseTest {
 
-    public TC09_CheckoutFlow(WebDriver driver) {
-        super();
-    }
 
     @Test
     public void checkoutScenario() {
